@@ -11,7 +11,7 @@ function Cart() {
   const totalCartAmount = useSelector((state) => state.cart.totalPrice);
   const handleContinueShopping = (e) => {
     e.preventDefault();
-    navigate("/products/");
+    navigate("/learning_react/products/");
   };
 
   return (

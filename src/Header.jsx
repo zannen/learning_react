@@ -8,17 +8,17 @@ function Header({ pagetitle }) {
 
   const handleNavLandingPage = (event) => {
     event.preventDefault();
-    navigate("/");
+    navigate("/learning_react/");
   };
 
   const handleNavCart = (event) => {
     event.preventDefault();
-    navigate("/cart/");
+    navigate("/learning_react/cart/");
   };
 
   const handleNavProducts = (event) => {
     event.preventDefault();
-    navigate("/products/");
+    navigate("/learning_react/products/");
   };
 
   const isProductsPage = pagetitle === "Plants";
@@ -28,7 +28,7 @@ function Header({ pagetitle }) {
     <div className="header-bar">
       <div className="header-left">
         <img
-          src="/public/logo.png"
+          src="/learning_react/logo.png"
           alt="Logo"
           className="logo"
           onClick={handleNavLandingPage}
@@ -50,7 +50,7 @@ function Header({ pagetitle }) {
       </div>
       <div className="header-right" onClick={handleNavCart}>
         <span className="cart-quantity">{totalQuantity}</span>
-        <img src="/public/trolley.png" alt="Cart" className="cart-icon" />
+        <img src="/learning_react/trolley.png" alt="Cart" className="cart-icon" />
       </div>
     </div>
   );

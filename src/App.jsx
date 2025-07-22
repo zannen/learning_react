@@ -12,9 +12,9 @@ function App() {
     <Provider store={store}>
       <Router>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/products/" element={<ProductListing />} />
-          <Route path="/cart/" element={<Cart />} />
+          <Route path="/learning_react/" element={<LandingPage />} />
+          <Route path="/learning_react/products/" element={<ProductListing />} />
+          <Route path="/learning_react/cart/" element={<Cart />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
