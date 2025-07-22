@@ -1,0 +1,11 @@
+.product-listing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-items: center;
+}
+
+h2 {
+  border-top: 1px solid #888;
+  text-align: center;
+}
