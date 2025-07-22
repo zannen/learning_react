@@ -13,7 +13,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/learning_react/" element={<LandingPage />} />
-          <Route path="/learning_react/products/" element={<ProductListing />} />
+          <Route
+            path="/learning_react/products/"
+            element={<ProductListing />}
+          />
           <Route path="/learning_react/cart/" element={<Cart />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
