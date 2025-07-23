@@ -50,11 +50,7 @@ function Header({ pagetitle }) {
       </div>
       <div className="header-right" onClick={handleNavCart}>
         <span className="cart-quantity">{totalQuantity}</span>
-        <img
-          src="../trolley.png"
-          alt="Cart"
-          className="cart-icon"
-        />
+        <img src="../trolley.png" alt="Cart" className="cart-icon" />
       </div>
     </div>
   );
