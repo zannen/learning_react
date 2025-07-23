@@ -7,7 +7,7 @@ function LandingPage() {
 
   const handleGetStarted = (e) => {
     e.preventDefault();
-    navigate("/learning_react/products/");
+    navigate("./products/");
   };
 
   return (

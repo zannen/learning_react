@@ -28,7 +28,7 @@ function Header({ pagetitle }) {
     <div className="header-bar">
       <div className="header-left">
         <img
-          src="/learning_react/logo.png"
+          src="../logo.png"
           alt="Logo"
           className="logo"
           onClick={handleNavLandingPage}
@@ -51,7 +51,7 @@ function Header({ pagetitle }) {
       <div className="header-right" onClick={handleNavCart}>
         <span className="cart-quantity">{totalQuantity}</span>
         <img
-          src="/learning_react/trolley.png"
+          src="../trolley.png"
           alt="Cart"
           className="cart-icon"
         />
