@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addItem } from "./store/cartSlice";
+import { addItem } from "./CartSlice";
 
 import "./ProductCard.css";
 

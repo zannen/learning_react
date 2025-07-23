@@ -1,6 +1,6 @@
 import "./CartCard.css";
 import { useDispatch } from "react-redux";
-import { addItem, removeItem, removeAllItem } from "./store/cartSlice";
+import { addItem, removeItem, removeAllItem } from "./CartSlice";
 
 function CartCard({ item }) {
   const dispatch = useDispatch();

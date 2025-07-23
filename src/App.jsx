@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
-import store from "./store/store";
+import Store from "./Store";
 
 import Cart from "./Cart";
 import LandingPage from "./LandingPage";
@@ -9,7 +9,7 @@ import NotFound from "./NotFound";
 
 function App() {
   return (
-    <Provider store={store}>
+    <Provider store={Store}>
       <Router>
         <Routes>
           <Route path="/learning_react/" element={<LandingPage />} />

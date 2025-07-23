@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import cartReducer from "./cartSlice";
+import cartReducer from "./CartSlice";
 
 // Load persisted state
 const loadState = () => {
@@ -13,7 +13,7 @@ const loadState = () => {
   }
 };
 
-const store = configureStore({
+const Store = configureStore({
   reducer: {
     cart: cartReducer,
   },
@@ -21,13 +21,13 @@ const store = configureStore({
 });
 
 // Save state to localStorage on every change
-store.subscribe(() => {
+Store.subscribe(() => {
   try {
-    const state = store.getState();
+    const state = Store.getState();
     localStorage.setItem("cart", JSON.stringify(state.cart));
   } catch (e) {
     console.error(e);
   }
 });
 
-export default store;
+export default Store;

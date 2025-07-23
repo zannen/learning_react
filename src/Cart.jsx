@@ -13,6 +13,10 @@ function Cart() {
     e.preventDefault();
     navigate("/learning_react/products/");
   };
+  const handleCheckout = (e) => {
+    e.preventDefault();
+    alert("Coming soon...");
+  };
 
   return (
     <div>
@@ -27,7 +31,7 @@ function Cart() {
         <button onClick={handleContinueShopping}>Continue Shopping</button>
       </div>
       <div className="cart-buttons">
-        <button>Checkout</button>
+        <button onClick={handleCheckout}>Checkout</button>
       </div>
     </div>
   );
